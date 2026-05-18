@@ -90,18 +90,18 @@ const PermissionPage = () => {
             dataIndex: 'module',
             sorter: true,
         },
-        {
-            title: 'CreatedAt',
-            dataIndex: 'createdAt',
-            width: 200,
-            sorter: true,
-            render: (text, record, index, action) => {
-                return (
-                    <>{record.createdAt ? dayjs(record.createdAt).format('DD-MM-YYYY HH:mm:ss') : ""}</>
-                )
-            },
-            hideInSearch: true,
-        },
+        // {
+        //     title: 'CreatedAt',
+        //     dataIndex: 'createdAt',
+        //     width: 200,
+        //     sorter: true,
+        //     render: (text, record, index, action) => {
+        //         return (
+        //             <>{record.createdAt ? dayjs(record.createdAt).format('DD-MM-YYYY HH:mm:ss') : ""}</>
+        //         )
+        //     },
+        //     hideInSearch: true,
+        // },
         {
             title: 'UpdatedAt',
             dataIndex: 'updatedAt',
